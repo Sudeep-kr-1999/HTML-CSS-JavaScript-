@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval and Set Time Out and Clear Time Out in javascript</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- This is a container -->
+        time now is <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is concept of Set Interval and Set Time Out and Clear Time Out in javascript");
+        // settimeout-----> allows us to run the function once after the interval of time..!
+        // // setinterval------> allows us to run the function repeatedly after the interval of time...!!!
+
+        function greet(name, byetext) {
+            console.log("Hello good morning" + " " + name + " " + byetext)
+        }
+
+        //   setTimeout(greet,5000 ,"harry","Takecare")
+
+
+        //   timeOut=setTimeout(greet,5000 ,"harry","Takecare")
+        //   console.log(timeOut)
+        //   # ye console.log mein jo timeout hai wo setTimeout ki unique id h.....(very very important).....!!!!!!!!
+
+        // clearTimeout(timeOut)  //  settimeout() waale id ko clear kr dega.....!!!!!.......(very very important).....!!!!!
+
+
+        // 5000 milli second equals 5 sec....!
+        //   output console par 5 second ke baad output dikhega...!!!!!
+        //  setTimeout mein 2nd argument ke baad ka argument function ka argument hota h jo set time out mein enter kiya hota h...!!!!  (vvi)
+
+        // //
+        //     # note:--------> below hum settimeout mein function par parenthesis lagakr function ko call kr rhe h jo ki galat hai... hume sirf batana
+        //                      hota h ki function kaun sa call hoga function ko call nhi krna hota.......( very very important)....!
+        //     setTimeout(greet(),2000)
+
+
+
+
+        // #setInterval logic....!!!!!
+        IntervalID = setInterval(greet, 1000, "Harry", "Good Night")
+        console.log(IntervalID)
+        clearInterval(IntervalID)
+        // setInterval ek particular function ko har ek given interval pr repeatedly run krega....!!!!!!!!!!!
+
+
+        function displayTime() {
+            time = new Date()
+            // new Date() construction current date and time deta h.....!
+            console.log(time)
+            document.getElementById("time").innerHTML = time
+        }
+
+
+        setInterval(displayTime, 1000)
+        // agar setInterval nhi krge to ye current time dikhayega aur gayab ho jaayega kyuki humne time update hi kha kiya
+        // good application of setInterval....!!!!!!!!!!( VVI )...!
+
+
+    </script>
+</body>
+
+</html>

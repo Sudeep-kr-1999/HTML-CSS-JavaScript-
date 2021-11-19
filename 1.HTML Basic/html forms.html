@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html forms</title>
+</head>
+
+<body>
+    <h2>this is HTML form tutorial</h2>
+    <form action="backend.php">
+        <!-- this action place is the place where the form is to b submitted-->
+        <label for="name">Name:</label> <!-- label name is a another logic and id must be same as level-->
+        <!-- agar hum label mein diye huye text pr click krege to wo box select ho jayega-->
+        <div> <input type="text" name="myname" id="name"></div> <!-- div is used to give division to the output text-->
+        <div>Roll no:<input type="text" name="my roll"></div>
+        <div>
+            E-mail:<input type="email" name="myemail">
+
+        </div>
+
+        <div>
+            <input type="date" name="" id="date">
+        </div>
+
+        <div>
+            BONUS:<input type="number" name="mybonus" id="">
+            <!-- here we can use 'e' to convert it into scientific format-->
+        </div>
+        <div>
+            <!-- use the below command generally-->
+            are you eligible: <input type="checkbox" name="myelegibility" checked> <!-- input:what you want to create-->
+            <!-- if you use checked then it is by default checked-->
+        </div>
+
+        <div>
+            gender: male <input type="radio" name="mygender" id="">
+            female <input type="radio" name="mygender" id="">
+            <!-- agar name same rhega to koi ek hi button press kr pyege-->
+            other <input type="radio" name="mygender" id="">
+        </div>
+
+        <div>
+            <input type="submit" value="submitt now">
+            <!--alt+downarrow is to move selected things downwards-->
+        </div>
+
+        <div>
+            <input type="reset" value="resset now">
+        </div>
+        <br>
+
+        <div>
+            write about yourself: <br> <textarea name="mytext" id="" cols="50" rows="50"></textarea>
+            <!-- text area is very important-->
+        </div>
+
+        <div>
+            <label for="car">CAR</label>
+            <select name="mycar" id="car">
+                <option value="indca">indica</option>
+                <option value="swf" selected>swift</option> <!-- selected is used for by default selection-->
+
+            </select>
+        </div>
+
+    </form>
+
+
+
+</body>
+
+</html>

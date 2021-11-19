@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigating / Manipulating DOM(document object model) in javascript</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Homes</li>
+            <li>About</li>
+            <li>Contact Us</li>
+            <li>Services</li>
+            <li>More About Us</li>
+        </ul>
+    </div>
+    <div class="container">
+        Another Container
+    </div>
+
+    <script>
+        // let main=document.getElementById('main');        //Navigating inside the DOM
+        // console.log(main)
+        // let nav=document.getElementById("nav")
+        // console.log(nav)
+        // console.log(nav.innerHTML)  //nav.innerHTML:----------> ye "nav" id ke andar ke chiz ko direct string ke form mein return kr dega...!
+        // nav.innerHTML="<li>Dynamic Element</li>"   // "nav" ke andar ka inner html change ho jaayega....!!!!!!!!!!!
+
+        // let containers=document.getElementsByClassName("container")
+        // console.log(containers)       //give HTML collections of containers...!
+        // console.log(containers[0])     // give container at index 0..!
+        // console.log(containers[1])     // give container at index 1....!
+
+
+        // // # using CSS Selector...!!!!
+        // let sel=document.querySelector(".container")
+        // console.log("selector returns:",sel)
+        // note:-----------> ye jo pehla element selector ko match krega wo return kr dega...........!!!!
+
+        // let sel=document.querySelector("#nav")
+        // console.log("selector returns:",sel)
+        // note:--------> isme saare pseudo selector jo humne padhe the CSS mein saare use ho skte h...!
+
+
+        // let sel=document.querySelector("#nav>li")
+        // console.log("selector returns:",sel)
+        // li ka pehla element return kr dega............!!!
+
+
+        let sel=document.querySelectorAll("#nav>li")
+        console.log("seletor returns",sel);
+        // is case mein querySelectorAll() use krne se selector ke pehle element ke badle saare element mil jaayege....!
+        sel[0].innerHTML="inserted";   //important concept...!!!
+        console.log(sel[0])
+
+
+
+
+
+
+    </script>
+</body>
+</html>

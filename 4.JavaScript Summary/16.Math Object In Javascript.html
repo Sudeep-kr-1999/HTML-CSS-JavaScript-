@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths Object in Javascript</title>
+</head>
+
+<body>
+    <div class="container">
+        THIS IS ABOUT MATHS OBJECT IN JAVASCRIPT.
+    </div>
+
+    <Script>
+        // PRINTING THE MATH OBJECT
+        let m = Math;
+        console.log(m)
+
+        // PRINTING THE CONSTANTS FROM THE MATH OBJECT LIBRARY...!
+        console.log("The value of Math.E is : ", Math.E)
+        console.log("The value of Math.LN2 is : ", Math.LN2)
+        console.log("The value of Math.LN10 is : ", Math.LN10)
+        console.log("The value of Math.LOG2E is : ", Math.LOG2E)
+        console.log("The value of Math.LOG10E is : ", Math.LOG10E)
+        console.log("The value of Math.PI is : ", Math.PI)
+        console.log("The value of Math.SQRT1_2 is : ", Math.SQRT1_2)
+        console.log("The value of Math.SQRT2 is : ", Math.SQRT2)
+
+
+        // PRINTING THE FUNCTION FROM THE MATH OBJECTS..............!!!!!!!!!
+        let a = 34.64534;
+        let b = 89.2058;
+        console.log("The value of a and b is: ", a, "and", b);
+        console.log("The value of a and b rounded is : ", Math.round(a), "and", Math.round(b));
+        console.log("3 raised to the power 2 is : ", Math.pow(3, 2));
+        console.log("the square root of the 54392 is : ", Math.sqrt(54392));
+        console.log("the cieling value of the 5.4 is : ", Math.ceil(5.4));
+        console.log("the floor value of the 5.4 is : ", Math.floor(5.4));
+        console.log("The absolute value of -5.4444354654 is : ", Math.abs(-5.4444354654));
+        // absolute value hamesha magnitude deti hai naa ki sign............aur magnitude hamesha positive rhtah h...........!!!!!!!!!!!!!!!!
+
+        // TRIGONOMETRIC FUNCTION...........!!!!!!!!!!
+        let pi = Math.PI
+        let c = pi / 4
+        console.log('the value of sin(c) is :', Math.sin(c));
+        console.log('the value of cos(c) is :', Math.cos(c));
+        console.log('the value of tan(c) is :', Math.tan(c));
+        console.log('the value of cot(c) is :', (1 / Math.tan(c)));
+        console.log('the value of sec(c) is :', (1 / Math.cos(c)));
+        console.log('the value of cosec(c) is :', (1 / Math.sin(c)));
+
+
+        // MINIMUM AND MAXIMUM FUNCTION..............!!!!!!!!!
+        let d = 1236545314654
+        let e = 5468415387548
+
+        console.log("the maximum among a and b is : ", Math.max(d, e))
+        console.log("the minimum among a and b is : ", Math.min(d, e))
+
+
+
+        //    Generating Random numbers.............!!!!
+        let r = Math.random()
+        //  Math.random()=====> by default "0" and "1" ke beech mein koi bhi random number generate krke de dega...........!!!!!!!!
+        console.log("the random number is : ", r)
+
+        //   agar hum ek range a,b ke andar random number generate krne ka ho to we use below formula....!!!!!!
+        // Random Number between a,b=> [a+(b-a)*Math.random()]  ....(very very important value...........!)
+
+        let p = 1
+        let q = 100
+        let r1_100 = p + (q - p) * Math.random()
+        console.log("the random value between a and b is : ", r1_100)
+
+    </Script>
+</body>
+
+</html>

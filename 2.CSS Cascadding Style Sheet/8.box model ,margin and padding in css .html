@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model in css</title>
+    <style>
+        * {
+            /*>>>>>>>>> (*{}) is the universal selector for css jb tk ki aap niche use change naa kre*/
+            box-sizing: border-box;
+            margin: 0px;
+            border: 0px;
+        }
+
+        body {
+            background-color:red;
+        }
+
+
+        .container {
+            background-color: gold;
+            border: 3px solid rgb(5, 10, 61);
+            /* padding: 90px;
+            padding-left:50px ;
+            padding-top:60px ;
+            padding-right:90px ;
+            padding-bottom: 80px; */
+            /* padding :60px 90px 80px 50px;     padding/margin: top right bottom left; */
+            margin: 34px;
+            /* same thing we will do for margin like margin left, margin right,margin top,margin bottom-*/
+            padding: 34px 19px;
+            /* padding:y(top/bottom) x(left/right) */
+            border-radius: 26px;
+            width: 500px;
+
+            /*agar hum margin and padding ko change krege bina width ko change kiye huye to width bhi chage ho jayegi apne 
+            us chiz ko rokne ke liye agar hum chahte h ki width fix rhe to hum ek concept k use krege jise hum box sizing bolte h */
+            box-sizing: border-box;
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h3>This is my heading</h3>
+        <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates minus ipsam, labore iusto
+            omnis ipsa fugiat explicabo eum aliquid quo, commodi mollitia impedit? </p>
+    </div>
+    <hr>
+    
+
+
+
+
+    <div class="container">
+
+        <h3>This is my heading</h3>
+        <p id="second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates minus ipsam, labore iusto
+            omnis ipsa fugiat explicabo eum aliquid quo, commodi mollitia impedit? </p>
+    </div>
+    <hr>
+
+
+
+
+    <div class="container">
+
+        <h3>This is my heading</h3>
+        <p id="third">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates minus ipsam, labore iusto
+            omnis ipsa fugiat explicabo eum aliquid quo, commodi mollitia impedit? </p>
+    </div>
+    <hr>
+
+
+
+</body>
+
+</html>

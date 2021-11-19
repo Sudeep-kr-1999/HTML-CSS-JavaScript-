@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating transistion effect on CSS</title>
+    <style>
+        #box {
+            display: flex;
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            /* transition-property: background-color;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 2s; */
+            transition: all 1s ease-in-out .3s;
+
+            /* transition shorthand property in one line ( very very important) */
+            /* transition:(background-color) (transistion duration) (transistion-timing-function) (transistion-delay.) */
+            /* binary property transisition is not general but we can do it also........!!!!!!!*/
+
+
+        }
+
+        #box:hover {
+            background-color: yellow;
+            height: 400px;
+            width: 440px;
+            border-radius: 102px;
+            font-size: 30px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h3>This is CSS Transistion Tutorial</h3>
+    <div class="container">
+        <div id="box">
+            This is my box
+        </div>
+    </div>
+
+</body>
+
+</html>

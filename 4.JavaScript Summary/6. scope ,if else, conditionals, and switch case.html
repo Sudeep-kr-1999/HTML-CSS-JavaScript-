@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and conditionals</title>
+</head>
+
+<body>
+    <!-- div>ul>li{Item-$}*7     ( very important emmet code)!!!!!!!!! -->
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+
+    <script>
+        // var string1="this is a string";
+        // var string1="this is a string-2";
+        // console.log(string1);
+
+
+        // let a="u";   // "let" is a keyword used to create variables..................!!!!!!!!!!!!!!!
+        // // let a="ub"    // it donot allow to redeclared the variable a globally as it is already declared........!!!!!!!!!!!
+        // {
+        //     let a="u6";   //it is a local block variable there is no scope of this variable outside this block............!!!!!
+        //     console.log(a);
+
+        // }
+        // console.log(a);
+
+
+        // constant variable logic:--->> which cannot be changed..............!!!!!!!!!!!!!!!!!!!!
+        // const a="this cannot be changed";
+        // // a="i want to change this"         // note constant variable cannnot be change in the programming............!!!!!!!!!!!!!!!!!
+        // console.log(a)
+
+
+        // - - - - -  -- - - -  - - - - - - - - - -  - - - - - - - - -  -  - - - - - - - - - - -  -  - - - - - - - - - - - - - - - - - - - - - - - -
+        //                               <<<<<<<<<<<<<<[conditionals concept...!]>>>>>>>>>>>>>>>>>>>>>
+        //  let age=prompt()   // prompt() is used to take input from the users in javascript.............!!!!!!!!
+        // let age = 2;
+        // if (age > 18) {
+        //     console.log("you can drink vine");
+
+
+        // }
+
+        // else if (age == 2) {
+        //     console.log("he is an infant")
+        // }
+
+        // else {
+        //     console.log("you can drink coldrinks");
+        // }
+
+
+        // - - - - -  -- - - -  - - - - - - - - - -  - - - - - - - - -  -  - - - - - - - - - - -  -  - - - - - - - - - - - - - - - - - - - - - - - -
+        // <<<<<<<<<<<<<<<<<<<<<[ Switch Case Statement]>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+        const cups = 4;
+        switch (cups) {
+            case 4:
+                console.log("the value of cups is 4")
+                break;
+            case 41:
+                console.log("the value of cups is 41")
+                break;
+
+            case 42:
+                console.log("the value of cups is 42")
+                break;
+
+            case 43:
+                console.log("the value of cups is 43")
+                break;
+
+            default:
+                console.log("the value of cups in other that above mentioned")
+                break;
+        }
+
+
+    // note:------> if we donot use "break;" statement then expected condition ke baad ke saare cases run ho jaayege pehle waale run nhi hoge.!!!
+
+
+    </script>
+
+</body>
+
+</html>

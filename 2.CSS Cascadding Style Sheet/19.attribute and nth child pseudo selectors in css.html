@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute and nth child pseudo selectors </title>
+    <style>
+        .container {
+            display: block;
+            width: 233px;
+            margin: auto;
+        }
+        
+        input {
+            border: 2px solid black;
+            display: block;
+        }
+        /* very impotant pseudo selector.......! */
+        /* to select input having type text we use below code 
+             generally used to select the specific type we want from the many */
+        
+        input[type='text'] {
+            padding: 23px;
+            border: 2px solid red;
+        }
+        /* to only select the target pointed by any of the tags here in this case the tag is a...pointed to google by writing go to google */
+        /* note: target hona necessary hai  nhi hoga to wo kaam nhi krega */
+        
+        a[target] {
+            font-size: 34px;
+            color: green;
+        }
+        
+        a[target=_self] {
+            font-size: 34px;
+            color: brown;
+        }
+        
+        input[type='email'] {
+            color: yellow;
+            border: 4px solid blue;
+        }
+        /* nth child pseudo selector concept in css(very very important) */
+        
+        li:nth-child(3)
+        /* li ke andar 3rd wala element ki property change krega hum jitni value nth child ke bracket mein dege usi par lagayega*/
+        
+        {
+            color: red;
+        }
+        
+        li:nth-child(2n+0)
+        /* according to formula sequence pe ye output operate krega....!!!*/
+        
+        {
+            color: blue;
+        }
+        
+        li:nth-child(odd)
+        /* odd element*/
+        
+        {
+            color: aqua;
+        }
+        
+        li:nth-child(even)
+        /*even element*/
+        
+        {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank"> go to google</a></h1>
+        <!-- here target="_blank" to open in new tab-->
+        <h1><a href="http://facebook.com" target="_self">go to facebook</a></h1>
+        <!-- here target="_self" to open in same tab-->
+        <form action="" class="formcontrol">
+            <input type="text" placeholder="enter your name">
+            <input type="email" placeholder="enter your email">
+            <input type="paasword" placeholder="enter your paasword">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">item 1</li>
+            <li class="item" id="item-2">item-2</li>
+            <li class="item" id="item-3">item-3</li>
+            <li class="item" id="item-4">item-4</li>
+            <li class="item" id="item-5">item-5</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

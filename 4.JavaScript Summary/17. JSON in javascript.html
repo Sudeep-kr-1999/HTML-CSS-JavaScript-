@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About JSON in javascript</title>
+</head>
+
+<body>
+    <div class="container">
+        <p>(JSON)=JavaScript Object Notation is an open standard file format, and data interchange format, that uses
+            human-readable text to store and transmit data objects consisting of attribute–value pairs and array data
+            types</p>
+
+        JSON is generally used to transport the object of javascript over the network as a string format (in simple
+        language)!!!!!!!!
+    </div>
+
+    <script>
+        let jsonObj = {
+            name: "Harry",
+            channel: "code with harry",
+            friend: "Rohan das",
+            food: "paneer",    //#foodlovers..!
+
+        }
+
+        console.log(jsonObj)
+
+        // JSON.stringify() used to convert object into string format...........!!!!!!!!!!!
+        // JSON.stringify() mein hum ek valid object ko as argument paas krte h...........!!!!
+        myjsonstr = JSON.stringify(jsonObj);
+        console.log(myjsonstr)
+
+
+        // replacing data from the string..........!!!!!!!!!
+        myjsonstr = myjsonstr.replace("Harry", "Larry");
+        console.log(myjsonstr)
+
+        // JSON.parse() used to reconvert string format again into object.............!!!!
+        // JSON.parse() mein hum ek valid string ko as the argument pass krte h............!!!!
+        newJsonObj = JSON.parse(myjsonstr);
+        console.log(newJsonObj);
+
+
+    </script>
+</body>
+
+</html>

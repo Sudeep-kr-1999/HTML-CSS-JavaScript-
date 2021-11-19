@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on css selectors</title>
+    <style>
+        h1 {
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+
+        }
+
+        /* div p{
+            /*div ke andar chahe kitne bhi nested div ho sbme ye property applicable ho jayegi*/
+        /* means kisi be div ke andar jitne bhi p h sbme applicable ho jaata h */
+        /* color: yellow; */
+        /* font-weight: bold; */
+        /* background-color:green; */
+
+        /* } */
+
+        /* div li p{
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+
+        } */
+
+        div>p {
+            /* div ke andar jo direct p hoga sirf usme hi effect krega ye styling .......! */
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+
+        }
+
+        div+p {
+            /* wo paragraph jiska just pichla wala sibling div ho usme ye property applicable hoga..!!!!!!! */
+            color: white;
+            background: black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1> this is more on selectors </h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>this is another paragraph inside li</p>
+                </li>
+                <li>this will not get affected</li>
+            </ul>
+            <p>this is a paragraph</p>
+
+        </div>
+        <p> this is another paragraph</p>
+    </div>
+    <p>this is outermost paragraph</p>
+</body>
+
+</html>

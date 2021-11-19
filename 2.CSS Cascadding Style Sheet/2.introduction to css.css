@@ -1,0 +1,21 @@
+/*<<<<<<<<<<<< [ welcome to css programming]>>>>>>>>>>>>>>>>*/
+
+/*syntax in css*/
+
+/*p{ color:blue; }*/  /* here "p" is the selector*/
+                      /* "color" is the property*/
+                      /* "blue" is the value*/
+                      
+  
+ /* for group of selectors*/
+  
+  /* header,p.intro  {
+      background-color: red;
+      border-radius: 3px;    
+    }      */
+
+p{
+    color:red;
+    background-color: hotpink;
+
+}

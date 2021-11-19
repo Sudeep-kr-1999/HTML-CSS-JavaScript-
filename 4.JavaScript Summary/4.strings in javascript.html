@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | string and string methods</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="content"></div>
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur commodi aut illo nemo earum magnam sapiente
+            minus molestiae dolor quos fuga officia ut, eum itaque dolorem error, ipsam asperiores optio obcaecati
+            nesciunt delectus sit qui! Accusamus, earum?</p>
+    </div>
+
+    <script>
+        var string = "this"
+        console.log("string")
+        var name = "sudeep"
+        console.log("name")
+        var myname1 = "sudeep "
+        var myname2 = "kumar"
+        var myname3 = myname1 + myname2
+        console.log(myname3)
+        var channel = "code with me";
+
+        //  very very important concept in the string(template literals)
+        // var temp=`${name} is a nice person and he is a channel called ${channel}`;    // act as fill in the blanks
+
+        // var length=myname3.length
+        // console.log(temp)
+        // console.log(`length of the name is ${length}`)
+
+
+        console.log("Hello world \nSudeep Kumar")   // "\n " is the scape sequence character
+        console.log("Hello world \\nSudeep Kumar")
+        // scape sequence operator:---------
+        // 1. \n,\t,\b
+
+
+        var y = new String("this")    // it is a string constructor syntax:---------
+        // new String(" string element")...............!!!!!
+        console.log(y)
+
+
+        document.getElementById('content').innerHTML = '<h3> this is an h3 heading</h3>'
+       // ye id= content waale container mein message " this is an h3 heading" insert kr dega by javascript.!
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

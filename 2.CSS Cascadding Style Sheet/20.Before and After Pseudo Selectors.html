@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selectors </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            /* very very important way to set background in website above */
+
+        }
+
+        header ::before {
+            background: url('https://source.unsplash.com/user/erondu/1600x900') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            /* writing position is vey very important here for background image*/
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            /* z*index is very very important tbhi image ke upar content dikhega*/
+            opacity: 0.3;
+            /* opoacity is very very important*/
+
+        }
+
+        section {
+            height: 344px;
+
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .navigation {
+            font-size: 20px;
+            display: flex;
+            /*by defult flex- direction row rhegi*/
+
+
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+        }
+
+
+        /* before and after pseudo selectors in css concept */
+        /* section::before{
+            /* add anything you want before the specified region here in this case it is section */
+        /* content: "this is a content";
+        }  */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+
+    </header>
+    <section>
+        <h1>Welcome to coding world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, animi? Cupiditate officia sint, doloribus
+            quisquam iure nobis veritatis amet libero necessitatibus ipsum deleniti minus odit possimus placeat animi,
+            laudantium incidunt facere modi labore esse.</p>
+    </section>
+    <hr>
+</body>
+
+</html>

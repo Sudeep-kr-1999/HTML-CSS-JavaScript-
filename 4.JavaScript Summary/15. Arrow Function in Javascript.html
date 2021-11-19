@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function And Lexical "THIS" in Javascript</title>
+</head>
+
+<body>
+    <div class="container">
+        This is arrow function tutorial
+    </div>
+
+    <script>
+        // function greet()
+        // {
+        //     console.log("Good Morning");
+        // }
+
+        // greet();
+
+
+
+        // ARROW FUNCTION...!!!!!!
+        // greet=()=>{
+        //     console.log("Good Morning");
+        // }
+
+        // greet();
+
+
+
+
+        greet = () => console.log("Good Morning");
+        greet();
+
+
+
+
+        setTimeout(() => {
+            console.log("we are inside set time out");
+
+        }, 3000);
+        // yha par hum settimeout mein function daal rhe h....!!!!!!!!
+
+
+        // let sum=(a,b)=>{
+        //     return a+b;
+        // }
+
+        // sum=sum(34,5)
+        // console.log(sum);
+
+
+
+        let sum = (a, b) => a + b;
+        sum = sum(34, 5)
+        console.log(sum);
+
+        let half = a => a / 2;       //ek argument mein hum direct bina bracket ke likh skte h!
+        half = half(420);
+        console.log(half);
+
+
+
+        // let obj1={
+        //     greeting:"good morning",
+        //     names:["Harry","Rohan","Skillf","DJkhiladi"],
+        //     speak(){
+        //         this.names.forEach((student)=>{
+        //             console.log(this.greeting+" hello "+student);
+
+        //         });
+        //     }
+
+
+
+        // }
+
+        // obj1.speak();
+
+        //  VERY VERY IMPORTANT........................!!!!!!!!!1
+        // note:----> arrow function object ke this pointer ko baahar jaakr hi khoj leta hai but agar hum arrow function ke jagah par ek normal
+        //    function use kre to wo baahar jaakr this pointer ko nhi khojega aur apne andr usko undefined kr dega...!!!
+
+
+
+        let obj1 = {
+            greeting: "good morning",
+            names: ["Harry", "Rohan", "Skillf", "DJkhiladi"],
+            speak() {
+                this.names.forEach(function s(student) {
+                    console.log(this.greeting + " hello " + student);
+
+                });
+            }
+
+
+
+        }
+
+        obj1.speak();
+        // above mein this ke jagah par undefined print ho jaayega............!!!!!!!!!!
+
+
+        // LEXICAL "THIS"..........!!
+        // note:---> kisi bhi object ke andar agar hum function bnayege aur agar uske andar ek arrow function use krte hai to jo "this" hota hai
+        //           wo parent ka this hota h, aur agar us funciton ke andar hum arrow function use naa kre to us function ka ek apna this hoga
+        //           isi logical behaviour ko "lexical this" ke naam se jaante h...............!!!
+
+
+
+
+
+    </script>
+</body>
+
+</html>

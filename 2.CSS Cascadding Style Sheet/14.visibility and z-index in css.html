@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility and z-index</title>
+    <style>
+        .class {
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+
+        }
+
+        #box1 {
+            background-color: green;
+            position: relative;
+            top: 49px;
+            z-index: 35;
+
+        }
+
+        #box2 {
+            background-color: greenyellow;
+            /* important notes::: */
+
+
+            /* display:none;  display none bhi element ko hide kr deta h but wo us jagah ko bhi hata deta h jaha wo element hota */
+            /* visibility: hidden;    visibility ki defalt value  visible hoti h */
+            /*  visibility hidden krne se element hide ho jaata h pr wo jagah uskii thi wo fix rehti h */
+            position: relative;
+            top: 14px;
+            z-index: 34;
+        }
+
+        #box3 {
+            background-color: hotpink;
+
+        }
+
+        #box4 {
+            background-color: indigo;
+
+        }
+
+        /* z-index:--- >z idex sirf positioned element mein kaam krti h .. yaani ki agar aapki position absolute, relative, fixed ,ya sticky ho tabhi z-index kaam krega ..!  position ki default value static hoti h jisme z-index kaam nhi krta...!!!
+
+        mere pass agr bhut saare boxes h for any reason ek box ke upar other boxes aa jaaye to kaun sa box upar dikhai dega
+        wo decide krti h z-index...! */
+
+        /* jiski z-index value badi hoti h wo sabse upar aa jata h  relative position mein!*/
+    </style>
+</head>
+
+<body>
+    <!-- div.class#box$*4 means div mein class ka naam class hoga id ka naam box1,bo2,box3,box4 hoga ($ *any number) usme utne class
+    bna dege jitne aapne enter ki hogi aur alga alga naaam se id utne banege jitne humne enter ki h -->
+    <div class="class" id="box1"> </div>
+    <div class="class" id="box2"></div>
+    <div class="class" id="box3"></div>
+    <div class="class" id="box4"></div>
+
+</body>
+
+</html>

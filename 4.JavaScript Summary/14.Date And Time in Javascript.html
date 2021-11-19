@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and time in javascript</title>
+</head>
+<style>
+    .container {
+        font-size: 22px;
+        background: linear-gradient(rgb(98, 100, 0), red);
+        border: 2px solid black;
+        padding: 4px;
+        margin: 4px;
+        text-align: center;
+        font-weight: bolder;
+        font-size: medium;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <!-- this is a container -->
+        Current Time is: <span id="time">
+
+        </span>
+
+    </div>
+
+    <script>
+        console.log("This is date and time");
+
+        // let now=new Date();
+        // // yha Date() ek object h (very very important)!!!!!!!!!!!!!!!!
+
+        // // console.log(now)
+
+
+        // let dt=new Date(0)
+        // // yha pr humne date ke andar "0" diya hai to ye wo reference data and time print krega jha se hum abhi date and time calculate krte h!
+        // console.log(dt)
+        // // Date() ke andar jo bhi number daalege wo refrence se utne millisecond aage ka time batayega....!!!!!
+        // // by default Date() current date deta hai agar usme koi reference naa maana gya ho....!!!!!!!!!
+
+
+        // let newdate=new Date("2029-09-30")
+        // // enter date ke baare mein information dega...
+        // console.log(newdate)
+
+        // let newdate=new Date(year,months,date,minutes,seconds,milliseconds);
+        let newdate = new Date(3020, 4, 6, 9, 3, 2, 34)
+        console.log(newdate)
+
+
+
+        let yr = newdate.getFullYear()
+        console.log("This year is :", yr)
+
+
+        let date = newdate.getDate()
+        console.log("This date is :", date)
+
+
+        let month = newdate.getMonth()
+        console.log("This month is :", month)
+
+        let hours = newdate.getHours()
+        console.log("this hour is :", hours)
+
+        // isi types se bhut se function hote hai bs newdate.function()[ fuction() kuch bhi ho skta h] hum use kr skte h....!!!
+
+
+
+        //    we can also update the dates ....!!!!!
+        newdate.setDate(15);
+        console.log(newdate)
+
+        // jis tarah setDate() Hota hai usi tarah setMonths() hota hai setHours() etc........! bhi hota hai jisko hum as need use kr skte h...!
+
+
+
+        newdate.setDate(32);
+        console.log(newdate)
+        // agar date ka range 31 se paar krege to automatically date and month use hisab se set ho jaayega.....mtlb next month mein chale jaayege.!
+
+
+        console.log(Date.now())
+        // ye return krega current_time_step....!!!!(very very important)!
+        // current_time_step:----> means jo reference time tha hamara to us reference time se abhi tak kitne millisecond guzar chuke h...
+        //    usee hum current_time_step se denote krte h.....!
+
+        function updateTime() {
+            time.innerHTML = new Date();
+            // yha pr time khud hi DOM mein jaakr first id jo "time" se hogi usme javascript execute kr dega...(very very important)....!
+
+
+        }
+        setInterval(updateTime, 1000)
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

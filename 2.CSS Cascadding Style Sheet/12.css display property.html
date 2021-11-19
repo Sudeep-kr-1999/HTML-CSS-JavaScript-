@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISPLAY PROPERTY</title>
+    <style>
+
+
+        body{
+            background-color:burlywood;
+        }
+        img {
+            width: 254px;
+            display: block;
+            margin: auto;
+            /* display is very important*   it may be inline  or block genrally */
+
+            /* inline k mtlb jitna width h bs utna lega aur agar align set krna ha to hum use display:block;
+                               kr ke margin ke hisab se set kr skte h*/
+            box-sizing: border-box;
+        }
+
+        h3 {
+            font-family: cursive;
+            margin: 21px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        header {
+            margin: auto;
+            border: 2px solid red;
+            display: block;
+            width: 50%;
+            box-sizing: border-box;
+
+        }
+
+        .box {
+            border: 4px solid black;
+            background-color: yellow;
+            margin: 4px;
+            padding: 23px;
+            display: inline-block;
+            width: 30%;
+            box-sizing: border-box;
+            /* box sizing  border box kene se jo aapki total width jo aapne di h utni rehti h including margin and padding
+            wrana margin aur padding aapke width ko change kr dege..! */
+
+        }
+
+        .container {
+            box-sizing: border-box;
+            margin: auto;
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <img src="C:\\Users\\Sudeep Kumar\\Desktop\\sudeep.jpg">
+
+        <h3>WELCOME TO MY BLOG</h3>
+
+
+
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sapiente dolores officiis nisi
+                dignissimos nostrum nulla excepturi illo, cumque amet atque magni alias id porro odio eaque iure
+                doloribus consequatur dolorem! Dicta blanditiis laborum accusantium aspernatur, quisquam, aperiam quam
+                pariatur magni fuga perspiciatis fugiat.</p>
+        </div>
+
+        <div class="box">
+            <h4 class="heading">heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sapiente dolores officiis nisi
+                dignissimos nostrum nulla excepturi illo, cumque amet atque magni alias id porro odio eaque iure
+                doloribus consequatur dolorem! Dicta blanditiis laborum accusantium aspernatur, quisquam, aperiam quam
+                pariatur magni fuga perspiciatis fugiat.</p>
+        </div>
+
+        <div class="box">
+            <h4 class="heading">heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sapiente dolores officiis nisi
+                dignissimos nostrum nulla excepturi illo, cumque amet atque magni alias id porro odio eaque iure
+                doloribus consequatur dolorem! Dicta blanditiis laborum accusantium aspernatur, quisquam, aperiam quam
+                pariatur magni fuga perspiciatis fugiat.</p>
+        </div>
+
+</body>
+
+</html>

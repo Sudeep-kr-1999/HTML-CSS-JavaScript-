@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables/ custom properties</title>
+    <style>
+         :root {
+            /* (:root) is for defining global variable means anything define in (:root) can be used        anywhere in the programme without restriction*/
+            /* --box-color:green; */
+            --primary-color: blue;
+            --secondary-color: red;
+        }
+        
+        .box {
+            /* --box-color:green;      way to declare variable<<<<<<<(--variable name:value)>>>>> */
+            width: 200px;
+            /* note: scope of the variable is very very important in this case the scope is local to the box container*/
+            height: 200px;
+            border: 2px solid red;
+            margin: 2px 9px;
+            background-color: var(--primary-color);
+            /* here writing var() is very very important to use the variable..!*/
+            box-shadow: 3px 3px var(--danger-color);
+        }
+        
+        .container {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

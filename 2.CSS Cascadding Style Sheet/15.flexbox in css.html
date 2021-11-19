@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> flex box in css</title>
+    <style>
+        .container {
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            /* initialize a container display as a flex box  */
+
+            /* flex properties for flex container  */
+            flex-direction: row;
+            /* flex direction by default row hoti h>>>>>>> ek row mein saare arrange ho jaayege*/
+            /* flex-direction: column; */
+            /* flex direction column mein saare ek column mein arrange ho jaayege*/
+            /* flex-direction: row-reverse; */
+            /*flex direction row reverse hone se sare row mein arrange hoge but order ulta hoga*/
+
+            /* flex-direction: column-reverse; */
+            /*flex direction column reverse krne se saare column mein arrange hoge but again order ulta hoga..!*/
+
+            /* flex-wrap: nowrap; */
+            /*flex-wrap by default no wrap hota h*/
+
+            /* flex-wrap: wrap; */
+            /*ab flex wrap hona suru krega*/
+
+
+            /* flex-wrap: wrap-reverse; */
+            /* flex wrap reverse ulte direction mein wrap ho jaata h*/
+
+            /* flex-flow: row-reverse wrap; */
+            /*  flex flow:----->>>> 2 property ek saath set kr skte h pehle flex direction likh do uske baad flex wrap likh do.*/
+
+            /* justify-content: center; */
+            /* chizo ko centerally align krta h horizontally*/
+
+            /* justify-content: space-between; */
+            /* chizo be beech ka space barabar barabar align hoga but corner se koi alignment nhi hoga*/
+
+            /* justify-content: space-evenly; */
+            /* chizo ke beech ka space barabar barabar align hoga aur is time corner ko include krte huye saare barabar hote h*/
+
+            /* justify-content: space-around; */
+            /*  is function mein ek box ke dono hi taraf space barabar barabar aa jayegi including corners isme conrners ke barabar ho bhi skte h nhi bhi */
+
+
+            /* align-items: center; */
+            /*chizo ko vertically center kr dega */
+
+            /* align-items: flex-end; */
+            /* saare element sabse neeche aa jayege*/
+
+            /* align-items: flex-start; */
+            /*by default flex start hi hota h saare item sabse upar aa jaate h*/
+
+            /* align-items: stretch; */
+            /* generally wrap ke saath use hota h ,, vertically even- spacing between the elements provide krta h*/
+
+        }
+
+
+
+
+
+        .items {
+            height: 200px;
+            width: 200px;
+            background: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+
+        }
+
+
+        #item-1 {
+
+            /* flex properties for flex items.  */
+            /* order:2; */
+            /* >>>>>>>>>>>>>> jiska order bada hota h  wo container mein  baad mein show kiya jaata h*/
+
+
+            /* flex-grow: 3; */
+            /*flex grow property dene se wo jayda ratio mein container ka space lega mtlb jab bhi aapke flex container ko bade
+          hone ka mauka milega to jiski flex grow jyda hogi wo utna hi speed se dushro ke respect mein bda hoga*/
+
+            /* note:-----> flex grow mein negative numbers dena allow nhi hota h*/
+
+
+            /* flex-shrink: 3; */
+            /* flex shrink bilkul flex grow ki tarah kaam kaam krta h but difference ye hai ki flex grow ki space grow krti thi
+          aur yha flex shrink ki space shrink hogi*/
+
+
+            /* note:----- above property generally individual items ke liye use mein li jaati h */
+
+
+            /* flex-basis: 1200px; */
+            /*when flex direction is set to row flex basis will control width..!!!*/
+            /*when flex direction is set to column flex basis will control the height...!!!!*/
+
+
+            /* flex:2 2 230px; */
+            /* sirf flex likhne se hum 3 chize control kr skte h pehle to flex grow , dushra flex shrink, aur third flex basis */
+
+
+
+        }
+
+        #item-2 {}
+
+        #item-3 {
+
+            /* flex items properties */
+
+            /* align-self: flex-end; */
+            /* item ko flex ke end mein bhej dega apne position ke respect mein vertically in this case*/
+
+            /* align-self: flex-start; */
+            /*item ko flex ke start mein bhej dega pne position ke respect mein vertically in this case*/
+
+            align-self: center;
+            /*item ko flex ke center mein bhej dega pne position ke respect mein vertically in this case*/
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+    1. What is flexbox  in css?
+    ANS:>>>>>>> The flexbox is a one-dimensional layout method for layering out items in rows and columns.
+        >>>>>>> CSS flexbox is a better way to align items into a container.
+        >>>>>>> (Flexbox = flexible + box  ) -->
+
+
+    <h1>This is a flexbox concept</h1>
+    <!-- div ki display by default block hota h -->
+    <div class="container">
+
+        <div class="items" id="item-1">first box</div>
+        <div class="items" id="item-2">second box</div>
+        <div class="items" id="item-3">third box</div>
+
+    </div>
+
+</body>
+
+</html>

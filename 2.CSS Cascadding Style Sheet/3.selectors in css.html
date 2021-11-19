@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS SELECTORS </title>
+    <style>
+        p {
+            color: brown;
+
+        }
+
+        /* THIS IS THE EXAMPLE OF ELEMENT SELECTOR */
+
+        #redelement {
+            /* "#" is for the id selector */
+            color: chartreuse;
+        }
+
+
+        .redelement {
+            /* ".(dot) is for the class selector"*/
+            color: yellow;
+
+        }
+
+        .bgblue {
+            background-color: firebrick;
+        }
+
+
+        footer,
+        span {
+            /* this is the example of grouping selectors*/
+            color: black;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>css selectors</h3>
+    <p>this is a simple paragraph to demonstrate css selectors</p>
+    <p>this is the first paragraph</p>
+    <div>
+        <p>this is yet another paragraph to demonstrate css selectors</p> <!-- div ke andar ka paragraph bhi red hoga-->
+    </div>
+    <P id="redelement">this is the id selector example</p>
+
+    <P id="sudeep" class="redelement"> this is the example of class selector</P>
+    <p id="kumar" class="bgblue redelement">this is the example of multiple class element</p>
+
+
+    <footer>this is the footer.</footer>
+    <span>this is span</span>
+
+</body>
+
+</html>

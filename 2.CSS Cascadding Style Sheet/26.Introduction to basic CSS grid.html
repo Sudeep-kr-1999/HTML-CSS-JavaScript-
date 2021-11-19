@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to the CSS grid concept</title>
+    <style>
+        .container {
+            display: grid;
+            /* grid-template-columns: 300px 100px 100px;  */
+            /* means 3 columns bna do ek ki width 300px dushre ki 100px and tishre ki 100px kr do!!!!*/
+
+            /* grid-template-columns: 300px auto 100px; */
+            /* grid-template-columns: 1fr 4fr 1fr; */
+            grid-template-columns: repeat(3, auto);
+            /*repeat use krne par jitne column likhe hoge repeat ke andar wo as mentioned arrange ho jaayege here  the number is 3
+            to pehle first ke 3 column arrange hoge tb jaakr baaki ke uske niche hoge...!*/
+            grid-gap: 2rem;
+            /* grid ke beeche mein gap set kr deta h!!!!!!!!!!!!!*/
+
+        }
+
+        .item {
+            /* height: 100px;
+            width: 100px; */
+            border: 2px solid black;
+            background-color: red;
+            padding: 15px 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">this is item-1</div>
+        <div class="item">this is item-2</div>
+        <div class="item">this is item-3</div>
+        <div class="item">this is item-4</div>
+        <div class="item">this is item-5</div>
+        <div class="item">this is item-6</div>
+        <div class="item">this is item-7</div>
+        <div class="item">this is item-8</div>
+        <div class="item">this is item-9</div>
+        <div class="item">this is item-10</div>
+        <div class="item">this is item-11</div>
+        <div class="item">this is item-12</div>
+        <div class="item">this is item-13</div>
+        <div class="item">this is item-15</div>
+
+
+
+        <!-- shortcut to create above pattern of item in one go in css emmet rule -->
+        <!-- div.item{this is item-$}*9 -->
+    </div>
+</body>
+
+</html>

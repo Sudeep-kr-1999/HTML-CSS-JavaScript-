@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String function in Javascript </title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <script>
+        var str = "this is a string";
+        console.log(str);
+        var position = str.indexOf("is");  //return first occurence of the substring in the stirng.............!!!!!
+        console.log(position);
+
+        position = str.lastIndexOf("is");
+        console.log(position);
+
+
+        // Substring from a string.........................!!!!!!!!!!!!!!!!
+        // var substr1=str.slice(1,6);   // print from index 1 to 5.........! end se ek km print krega.......!!!!!!!!!!!!!
+        // var substr1=str.substring(1,6);
+
+
+        var substr1 = str.substr(1, 8);     /// this means 1 index se start kro aur 7 length tk string add kr lo.........!!
+        // first argument in substr is kis index se start krna h. aur second argument is all about kitne character aapke substring mein hone h!!
+        console.log(substr1);
+
+        // note:---------> slice() function negative indexing pr bhi kaaam krta hai mtlb wo negative values bhi le skta h but substring() function
+        //                 negative values nhi le skta (very very important concept)!!!!!!!!
+
+        var replaced = str.replace("string", "Harry")
+        console.log(str)   // string mutable nhi hota h.........is liye purana string retain hota h...........!!!!!!!!
+        console.log(replaced)
+
+
+        console.log(str.toUpperCase());          // string ko uppercase mein print kr dega..........!!!!!!
+        console.log(str.toLowerCase());          // string ko lowercase mein print kr dega.......!!!!!!!!!!!
+
+
+        var new_string = str.concat("new string");   // used to concat 2 strings............!!!!!!!!
+        console.log(new_string);
+
+        var str_with_white_spaces = "         this contains           whitespaces      in the string        ";
+        console.log(str_with_white_spaces)
+        console.log(str_with_white_spaces.trim())
+        // note:-----------> trim() string ke "starting" se aur "end" se white spaces ko delete kr dega but middle se white spaces ke nhi hatayega..!
+
+        var char_3 = str.charAt(2);       //charAt() function given index ke according character return kr deta h............!!!!
+        console.log(char_3);
+
+        console.log(str.charCodeAt(2));        // charCodeAt() function us index ke corresponding character ka ASCII CODE return krta h!!!!
+        console.log(str[0])
+        console.log(str[1])
+
+
+
+    </script>
+</body>
+
+</html>

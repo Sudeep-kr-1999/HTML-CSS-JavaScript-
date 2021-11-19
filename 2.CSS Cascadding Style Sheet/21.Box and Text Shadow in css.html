@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box and text shadow in css concept </title>
+    <style>
+        .container {
+            display: flex;
+
+        }
+
+
+        /*
+         <<<<<<<<<<box-shadow concept>>>>>>>>>>>>
+        syntax of box-shadow: by default offset hoti h but inset bhi ho skti h  ( offset baahr shadow bhadayega aur inset andar ko)
+        3 different types of syntax: very important..!
+        box-shadow: (offset-x) (offset-y) (blur-radius) (spread-radius) (color);
+        box-shadow: (offset-x) (offset-y) (blur-radius) (color);
+        box-shadow: (offset-x) (offset-y)  (color); */
+
+
+        /*note:- if offset values are positive to shadow niche aayegi
+               if offset values are negative to shadow upar mein aayegi */
+
+
+        /* note: box-shadow: (offset-x) (offset-y) (rgba); // here r g b is color and a is alfa and it will decide ki colour kinna dark ya light hoga..!!!!!!!!!!!!!!! */
+
+        .card {
+            padding: 23px 32px;
+            margin: 23px 12px;
+            /* border: 2px solid red; */
+            background-color: yellow;
+            box-shadow: 10px 13px 10px 15px rgba(34, 53, 25, 1.6);
+            box-shadow: inset 3px 5px green;
+            box-shadow: 3px 5px green, 4px 6px red;
+            /* here first data is for inset and second data is for ofset*/
+
+
+        }
+
+        /* text- shadow is same syntax and properties as of box shadow */
+        .card h2 {
+            text-shadow: 3px 4px red;
+            text-shadow: 3px 4px 5x brown;
+            /* here (offset-x) (offset-y) (blur) (color) is the pattern*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>this is c++ course</h2>
+            <p> i have started c++ course which does not mean that we stop this course we will do it til completion</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>this is HTML course</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum illum eos laborum, explicabo sunt iure fuga
+                corporis numquam quidem. Nam ullam tempora magni alias, qui doloremque aspernatur inventore ad harum.
+                Ipsam omnis magnam quod.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>card3</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae ab eos, ex maxime illo harum beatae
+                adipisci quia culpa iste modi fuga aliquam magni dicta voluptas rerum quaerat natus aut unde!
+                Voluptatibus, fugiat aliquid!</p>
+        </div>
+    </div>
+</body>
+
+</html>

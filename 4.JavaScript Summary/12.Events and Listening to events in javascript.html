@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and Listening Events in javascript</title>
+</head>
+<style>
+    #btn {
+        padding: 10px 14px;
+        background: red;
+        border: 2px solid black;
+        border-radius: 8px;
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+
+    }
+</style>
+
+<body>
+    <!-- <h1>Events ek singnal hota h ki kuch hua h webpage pr!</h1> -->
+    <!--
+    Browser Events:
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/
+    mousemove
+
+    submit
+    focus
+    DOMContentLoaded
+    Transistion Events
+     -->
+
+
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quam voluptatem placeat magni.
+            Consectetur aliquam minima aut suscipit placeat, nemo earum recusandae quas eos minus sit optio ex beatae
+            reprehenderit officiis magni labore eveniet odit, quae voluptatem deleniti error. Nisi vero at qui magni
+            rem, ipsum consequatur possimus animi quo nam voluptates dolore accusantium molestias ratione aspernatur.
+            Sit necessitatibus maiores porro totam voluptate pariatur eos nulla, a soluta tempore ut ipsum deserunt
+            voluptatum facere repellat quam. Optio dolore error debitis ipsam mollitia asperiores magnam dolores ratione
+            quam totam voluptatibus sequi omnis saepe, voluptatum eligendi. Porro aut dolore, totam enim facere illum
+            quaerat veniam doloribus repudiandae rerum fugit! Minus, labore eligendi veritatis, eum quas ut beatae
+            repudiandae deleniti temporibus obcaecati nulla, magni neque a dolorem enim porro necessitatibus repellendus
+            alias nihil blanditiis. Minus magni inventore ad? Dignissimos ea totam voluptas illo a quod eos recusandae
+            magni excepturi eligendi, eius fugiat rem eaque alias similique deleniti minus repudiandae magnam aut
+            blanditiis! Eum reiciendis animi nulla officiis provident commodi necessitatibus, ratione praesentium
+            voluptates cumque nihil dolorum vel. Ipsa, dolorem. Laborum hic explicabo molestiae totam quasi cum, optio
+            earum non deserunt quae ipsa perferendis iure iste nisi! Eius rerum nesciunt dignissimos, illum quibusdam,
+            voluptas, est illo ipsam neque voluptates adipisci sint atque molestiae a. Nesciunt quidem placeat veniam
+            tempore, amet dolorem quos inventore odit pariatur architecto, aperiam quae reprehenderit nobis sequi
+            corporis repellat quibusdam deserunt laboriosam! Necessitatibus.</p>
+    </div>
+    <button id="btn" onclick="togglehide()">Show/Hide</button>
+
+    <script>
+        let para = document.getElementById("para")
+        para.addEventListener("mouseover", function run() {
+            //  alert("mouse inside")
+            console.log("mouse inside");
+        })
+
+
+
+        para.addEventListener("mouseout", function run() {
+            //  alert("mouse now went outside")
+            console.log("mouse now went outside");
+        })
+
+
+
+        function togglehide() {
+            // let btn=document.getElementById("btn")
+            // let para=document.getElementById("para")
+            // para.style.display="none"
+            if (para.style.display != "none")    //yha pr id paara hai to bina above 2 statement ke bhi run kr jaayega....!
+            {
+                para.style.display = "none"
+
+            }
+            else {
+                para.style.display = "block";
+            }
+        }
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

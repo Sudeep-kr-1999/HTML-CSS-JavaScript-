@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position aboslute, relative,fixed and sticky in css</title>
+    <style>
+        /* 
+        CSS  position : static(default),absolute,relative, fixed and sticky */
+
+        .box {
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+            display: inline-block;
+        }
+
+
+        #box3 {
+            /* position: static;   /* by default position static hi hoti h to koi fark nhi padgega..!!!!!!!!! */
+            /* position: relative; */
+            /* postition relative-----> ka mtlb apne relative postition ke respect mein wo hilega.... aur hum top ,bottom, left , right use kre skte h..! */
+
+            /* relative use krne se purani position mein gap aa jaata h agar aapko purani position mein gap chahiye tab humlog relative use krege aur agar nhi chahiye to position absolute use krege...! */
+            /* position:absolute; */
+
+
+            /* absolute mein saari changes apne parent element ke respect mein hoti h yha par parent element container class h*/
+
+
+            /* top:34px;
+            left:34px;
+
+            position :static; */
+            /* position:fixed; */
+
+            /* position fixed:------ krne par agar aap page ko scroll up ya down krege to jiska position aapne fixed kiya hoga n wo position se nhi hilega wo whi pr fixed rhega.........!*/
+
+
+            /* right:4px;
+            bottom:2px; */
+
+
+            position: sticky;
+            top: 3px;
+
+            /* position sticky:------- jiski position sticky ki jaati h wo web browser pr usi position pr reh jaata h agar aap scroll krege
+        to saare scroll hoge but wo nhii hoga wo chipka rhega usi position pr jisko aapne sticky kiya hoga */
+        }
+
+
+        .container {
+            border: 2px solid black;
+            background-color: chartreuse;
+            height: 3444px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+
+    </div>
+
+</body>
+
+</html>
