@@ -1,5 +1,6 @@
 
 // this wil start the timer ...............................!!!!!!!!!!
+// the given argument is the label
 console.time("your code took :");
 console.log("hello console");
 console.log("hello sudeep kumar to the javascript tutorial");

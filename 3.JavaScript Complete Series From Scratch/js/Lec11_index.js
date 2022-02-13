@@ -3,7 +3,7 @@ console.log("this is about DOM(Doucment object model in javascript)");
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // note:----------- here window is the Object of the javascript which is automatically global!
-//    hence we can write window.Function() or directly function();
+//    hence we can write window.Function() or directly Function();
 // let a=window;
 // window.alert("hello harry");
 // alert("hello sudeep");
@@ -18,7 +18,7 @@ console.log("this is about DOM(Doucment object model in javascript)");
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 let a = window;
-
+console.log(a);
 // it is also called DOM
 console.log(window.document);
 a = window.innerHeight;
@@ -31,7 +31,7 @@ a = location;
 
 // note:-------- it will reload the pages
 // console.log(location.reload());
-// console.log(location.href);
+console.log(location.href);
 
 // note:------ ye seedhe facebook.com pr chla jaayega..!
 // location.href="//facebook.com";

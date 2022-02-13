@@ -11,21 +11,21 @@ const proto={
     }
 }
 
-// const harry=Object.create(proto);
-// harry.name="Harry";
-// harry.role="Programmer";
-// harry.changeName("Sudeep");
-// console.log(harry);
+const harry=Object.create(proto);
+harry.name="Harry";
+harry.role="Programmer";
+harry.changeName("Sudeep");
+console.log(harry);
 
 // ==============================================================================================================
 // ALTERNATE WAY TO CREATE OBJECT FROM PROTOTYPE"-------------------
 
 // note if we want to change any value in the argument we should make its (writable:true)!
-const harry=Object.create(proto,{
-    name:{value:"Harry",writable:true},
-    role:{value:"Programmer"}
-})
-harry.changeName("Sudeep");
+// const harry=Object.create(proto,{
+//     name:{value:"Harry",writable:true},
+//     role:{value:"Programmer"}
+// })
+// harry.changeName("Sudeep");
 // console.log(harry);
 
 // =============================================================================================================

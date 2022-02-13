@@ -1,15 +1,14 @@
 console.log("This is about Fetch API in Javascript");
 
 // Button with id myBtn
-let myBtn = document.getElementById('myBtn');
+let myBtn = document.getElementById("myBtn");
 
 // div with id content
-let content = document.getElementById('content');
-
+let content = document.getElementById("content");
 
 // <-------------------------------------------------(GET REQUEST USING fetch() API)--------------------------------------------------------->
 // ==============================================================================================================================================================
-// fetch(url) ek promise return krega uske liye pehle waala then() use krege aur jo function dege here it is "response" ye promise ke andar resolve ke rup mein run ho jaayega aur again ek 
+// fetch(url) ek promise return krega uske liye pehle waala then() use krege aur jo function dege here it is "response" ye promise ke andar resolve ke rup mein run ho jaayega aur again ek
 // aur promise return krega and uske baad usme then() lgakr hum data le skte h.
 
 // note:-------- fetch() asynchronous hota h means background mein run krega
@@ -43,16 +42,12 @@ let content = document.getElementById('content');
 //     fetch(url).then((response) => {
 //         console.log("inside first then")
 
-//         // response.text: -PURE JSON KO AS A TEXT CONSOLE PR PRINT KR DEGA 
+//         // response.text: -PURE JSON KO AS A TEXT CONSOLE PR PRINT KR DEGA
 //         // console.log(response.text);
 //         // return response.text();
-
 //         console.log(response.json);
 //         // ye as Object show krega paas krke
 //         return response.json();
-
-
-
 //     }).then((data) => {
 //         console.log("Inside second then")
 //         console.log(data);
@@ -64,36 +59,33 @@ let content = document.getElementById('content');
 // ===============================================================================================================================================================
 // <-----------------------------------------(POST request using fetch() API)-------------------------------------------------------------------------------->
 
-// sometimes we need to include headers sometimes not 
-// note:----- har baar unique name chahiye hota h data mein tb hi chalega 
+// sometimes we need to include headers sometimes not
+// note:----- har baar unique name chahiye hota h data mein tb hi chalega
 function postData() {
-    console.log("Started postdata");
-    url = "http://dummy.restapiexample.com/api/v1/create";
-    data = '{"name":"harglry347485945","salary":"123","age":"23"}';
-    params = {
-        method: 'post',
+  console.log("Started postdata");
+  url = "http://dummy.restapiexample.com/api/v1/create";
+  data = '{"name":"harglry347485945","salary":"123","age":"23"}';
+  params = {
+    method: "post",
 
-        // headers: {
-        //     // 'Content-type': 'application/json'
-        // },
+    // headers: {
+    //     // 'Content-type': 'application/json'
+    // },
 
-
-        // if data is not string means it is a object we use JSON.stringify(data) to make it string if it already a string it's fine no need to use this
-        // body:JSON.stringify(data)
-        body: data
-    }
-    fetch(url, params).then((response) => {
-        return response.text();
-
-    }).then((data) => {
-        console.log(data);
-
+    // if data is not string means it is a object we use JSON.stringify(data) to make it string if it already a string it's fine no need to use this
+    // body:JSON.stringify(data)
+    body: data,
+  };
+  fetch(url, params)
+    .then((response) => {
+      return response.text();
+    })
+    .then((data) => {
+      console.log(data);
     });
 }
 
 postData();
-
-
 
 // details about post request in fetch api -------------------------------------------------------
 // // Example POST method implementation:
@@ -114,7 +106,7 @@ postData();
 //     });
 //     return response.json(); // parses JSON response into native JavaScript objects
 //   }
-  
+
 //   postData('https://example.com/answer', { answer: 42 })
 //     .then(data => {
 //       console.log(data); // JSON data parsed by `data.json()` call

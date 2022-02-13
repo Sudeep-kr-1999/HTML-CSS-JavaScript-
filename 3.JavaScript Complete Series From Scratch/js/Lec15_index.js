@@ -1,4 +1,4 @@
-console.log("his is about Children, Parent And Traversing In DOM ");
+console.log("this is about Children, Parent And Traversing In DOM ");
 
 let cont=document.querySelector('.no');
 cont=document.querySelector('.container');
@@ -7,10 +7,10 @@ console.log(cont);
 // to get the childnodes inside the selected class or id by querySelector
 // note:----------- childnode humare text or comment ye sb chizo ko manta h
 // note:---------------- child node next/new line ko bhi text ke jaise consider kr leta h
-// console.log(cont.childNodes);
+console.log(cont.childNodes);
 
 // note:---------- if we donot want any Text,comment,nextline or new line or any other which we donot want extra it simply recognise only elemnents , we use (children)
-// console.log(cont.children);
+console.log(cont.children);
 
 
 let nodename=cont.childNodes[0].nodeName;

@@ -18,7 +18,6 @@
 // let arrelement=array[0];
 // console.log(arrelement);
 // console.log(array);
-
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // note:----------- agr array const rehga to hum usko uske method ki help se change kr paayege but whole array ko direct change nhi kr paayege

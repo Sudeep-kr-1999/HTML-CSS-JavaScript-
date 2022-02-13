@@ -7,16 +7,17 @@ console.log("This is about HTML Element selector in javascript");
 
 // ================================================================================================================================================
 // Single Element Selectors:
-// let element=document.getElementById("myfirst");
+let element=document.getElementById("myfirst");
+// console.log(element);
 // element=element.className;
 // element=element.childNodes;
 // element=element.parentNode;
 // element.style.color='red';
 // element.innerText="Harry is a good boy";
 // element.innerHTML="<b> Sudeep is a javascript learner</b>";
-// console.log(element);
-// console.log(element.innerText);
-// console.log(element.innerHTML);
+console.log(element);
+console.log(element.innerText);
+console.log(element.innerHTML);
 
 // selecting the id
 // let sel=document.querySelector('#myfirst');
@@ -55,7 +56,7 @@ for (let index = 0; index < elements.length; index++) {
 }
 
 elements = document.getElementsByTagName('div');
-console.log(elements);
+console.log(elements,typeof(elements));
 
 Array.from(elements).forEach(element => {
     console.log(element);

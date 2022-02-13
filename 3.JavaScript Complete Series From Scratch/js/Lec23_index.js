@@ -43,6 +43,10 @@ random = 100 * Math.random();
 
 
 // for 50 to 100
+
+// a= lower level
+// b= upper level
+// basically: a+(b-a)*Math.random()
 random = 50 + (100 - 50) * Math.random();
 console.log(random);
 

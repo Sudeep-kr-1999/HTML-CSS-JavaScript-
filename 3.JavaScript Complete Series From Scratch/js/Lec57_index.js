@@ -66,7 +66,7 @@ let mykeyArray=Array.from(myMap.keys());
 console.log("Map to keys array is  : ",mykeyArray);
 
 // converting map values to array 
-let myValueArray=Array.from(myMap);
+let myValueArray=Array.from(myMap.values());
 console.log("Map to values array is  : ",myValueArray);
 
 

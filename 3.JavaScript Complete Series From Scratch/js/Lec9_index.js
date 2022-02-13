@@ -69,9 +69,10 @@ console.log("This is about for , while and dowhile loops in javascript programmi
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 let arr = [2, 5, 6, 4, 2, 3];
 
-// for(let i=0;i<arr.length;i++){
-//     console.log(arr[i]);
-// }
+// in this case the numbers are printed in the console 
+for(let i=0;i<arr.length;i++){
+    console.log(arr[i],typeof(arr[i]));
+}
 
 
 // forEach loop in javascript:--------------------------------------------

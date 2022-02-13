@@ -1,3 +1,5 @@
+
+// the label of time and timeEnd must be same takki pata pade ki kaun se time ko end krna hai 
 console.time("your code took :");
 console.log("this is about variable in javascript which is var,const and let");
 console.timeEnd("your code took :");

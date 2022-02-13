@@ -13,6 +13,7 @@ console.log(a, b, c, d);
 
 // very very important 
 // but if we do it like this then a=1,b=2,c=3 and rest all contained in d as an array 
+// "..." is called spread operator
 [a, b, c, ...d] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 console.log(a, b, c, d);
 

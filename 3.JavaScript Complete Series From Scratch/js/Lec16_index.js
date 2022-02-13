@@ -13,7 +13,7 @@ element.id = 'createdli'
 //     Sets the value of element's first attribute whose qualified name is qualifiedName to value.
 element.setAttribute('title', 'mytitle');
 // element.innerText='Hello this is created by sudeep';
-// element.innerHTML='<b>Hello this is created by sudeep by using innerHTML</b>';
+element.innerHTML='<b>Hello this is created by sudeep by using innerHTML</b>';
 
 let text = document.createTextNode('I am a Text Node');
 element.appendChild(text);

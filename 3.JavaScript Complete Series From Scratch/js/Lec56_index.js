@@ -31,6 +31,7 @@ for (let index = 0; index < Object.keys(obj).length; index++) {
 
 // iterating using for in loops 
 for(let key in obj){
+    console.log(key);
     console.log(obj[key]);
 
 
@@ -42,6 +43,9 @@ for(let key in obj){
 // we can use for in loops with string to go through all the characters 
 let myString="This is a string";
 for(let char in myString){
+
+    // it is the index of char 
+    console.log(char);
     console.log(myString[char]);
 }
 
